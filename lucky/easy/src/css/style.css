@@ -25,7 +25,7 @@ body {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -78,6 +78,27 @@ img {
   border-radius: 10px;
   padding: 20px 26px;
   font-size: 15px;
+}
+
+@media (max-width: 588px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
 }
 
 .navbar {
@@ -191,7 +212,9 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  margin-bottom: 69px;
+  margin-bottom: 50px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-list {
@@ -218,6 +241,8 @@ img {
 .hero-list__image {
   width: 40px;
   height: 40px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +256,7 @@ img {
 }
 
 .hero-list__text {
-  min-width: 300px;
+  max-width: 300px;
 }
 
 .hero-image {
@@ -246,11 +271,20 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hero-list {
-    margin-bottom: 44px;
+  .hero-text__subtitle {
+    margin-bottom: 35px;
   }
-  .hero-text {
-    padding-right: 10px;
+  .hero-list {
+    margin-bottom: 40px;
+  }
+  .hero-list__item {
+    margin-bottom: 18px;
+  }
+  .hero-list__image {
+    margin-right: 20px;
+  }
+  .hero-image {
+    margin: auto;
   }
 }
 
@@ -258,21 +292,53 @@ img {
   .hero-text-title {
     font-size: 24px;
     line-height: 1.4;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .hero-list-item {
     margin-bottom: 20px;
   }
-  .hero-list-text {
+  .hero-list__text {
     font-size: 12px;
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+  .hero-image {
+    min-width: 270px;
+  }
+}
+
+@media (max-width: 588px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 13px;
+  }
+  .hero-text__subtitle {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .hero-image {
+    min-width: 100%;
+  }
+  .hero-list {
+    margin-bottom: 10px;
+  }
+  .hero-list__item {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .icon {
+    width: 16%;
   }
 }
 
