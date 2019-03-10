@@ -1,0 +1,113 @@
+.hero
+  padding: 50px 0
+  background-color: $secondary
+  &-block 
+    display: flex
+    align-items: flex-start
+  &-text 
+    flex-basis: 50%
+    padding-right: 25px 
+    &__title 
+      font-size: 41px
+      line-height: 55px
+      margin-bottom: 35px
+      +bold
+    &__subtitle
+      display: inline-block
+      font-size: 20px
+      margin-bottom: 50px
+      +bold
+  &-list 
+    margin: 0
+    padding: 0
+    line-height: 24px
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+      margin-right: 200px
+      &:last-child
+        margin-bottom: 0
+    &__image
+      width: 40px
+      height: 40px
+      border: 2px solid $main-color
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 30px
+    &__text
+      max-width: 300px
+  &-image 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1)
+     
+
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+      
+    &-text
+      &__subtitle
+        margin-bottom: 35px
+    &-list 
+      margin-bottom: 40px
+      &__item
+        margin-bottom: 18px
+      &__image
+          margin-right: 20px
+    &-image
+      margin: auto
+
+
+@media (max-width: 768px)
+  .hero
+    &-text
+      &-title 
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 10px
+      &__subtitle
+        font-size: 16px
+        font-weight: bold
+        margin-bottom: 15px
+    &-list
+      &-item 
+        margin-bottom: 20px
+      &__text 
+        font-size: 12px
+      &__image
+        margin-right: 15px
+    &-image
+      min-width: 270px
+
+
+@media (max-width: 588px) 
+  .hero
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 29px
+      
+        margin-bottom: 13px
+      &__subtitle
+        font-size: 14px
+        font-weight: bold
+    &-image
+      min-width: 100%
+    &-list 
+      margin-bottom: 10px
+      &__item
+        margin: auto
+        margin-bottom: 15px  
+      &__text
+        font-size: 12px
+        line-height: 17px
+      
+  // .circle
+  //   width: 14%      
+  .icon
+    width: 21%
+
+      
