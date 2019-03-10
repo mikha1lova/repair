@@ -1,0 +1,85 @@
+.offer
+  background: url('../img/offer_bg.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block 
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px
+    line-height: 35px
+    margin-top: -10px
+    margin-bottom: 24px
+  
+  &__subtitle
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    outline: none
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    font-size: 15px
+    +bold
+  &__notes
+    display: flex
+    justify-content: space-between
+    font-size: 15px
+    margin-top: 30px
+    line-height: 24px
+  &__note-info
+    margin-right: 40px
+    
+
+  &__note-contact
+  &__phone
+    display: inline-block
+    text-decoration: none
+    +bold
+    color: $text-color
+
+@media (max-width: 1200px)
+ .offer
+  //  свойство cover служит для полного заполнения
+    background-size: cover
+    
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 12px
+     &__notes
+      flex-direction: column
+            
+    &__note-info
+      margin-bottom: 10px
+    &__phone
+      display: block
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    
+    &-block
+      width: 100%
+      padding-right: 0
+    &__notes
+      flex-direction: column
+            
+    &__note-info
+      margin-bottom: 10px
+    &__phone
+      display: block
